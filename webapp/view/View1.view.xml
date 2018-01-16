@@ -1,0 +1,15 @@
+<mvc:View controllerName="com.ks.test.zten_unit_Test.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<Button text="Show Alert" press="raiseAlert"></Button>
+					<Input id="inputVal"></Input>
+					<Button text="UpdateColor" press="changeTxtState"></Button>
+					<ObjectStatus class="sapUiSmallMarginBottom" text="Unknown" state="{/state}"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

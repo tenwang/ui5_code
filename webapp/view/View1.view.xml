@@ -8,6 +8,7 @@
 					<Input id="inputVal"></Input>
 					<Button text="UpdateColor" press="changeTxtState"></Button>
 					<ObjectStatus class="sapUiSmallMarginBottom" text="Unknown" state="{/state}"/>
+					<Button id="pressMeButton" text="Press me" press="onPress" visible="false"></Button>
 				</content>
 			</Page>
 		</pages>

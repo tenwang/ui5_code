@@ -15,7 +15,18 @@ sap.ui.define([
 			// oModel.setData(aData);
 			oModel.setProperty("/state", "Error");
 			this.getView().setModel(oModel);
+			
+				//for opa5
+			var that = this;
+			window.setTimeout(function() {
+				that.byId("pressMeButton").setVisible(true);
+			}, Math.random() * 10000);
 		},
+		
+		onPress: function() {
+			this.byId("pressMeButton").setText("I got pressed");
+		},
+		
 		raiseAlert: function() {
 			var txt = "wangmo";
 			formatter.getAlert(txt);
